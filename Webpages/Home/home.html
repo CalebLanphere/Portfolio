@@ -12,8 +12,9 @@
             <a href="/Webpages/Home/home.html" class="navLinksEnd">Caleb Lanphere</a>
         </div>
         <ul class="navPageLinks">
-            <li><a href="/Webpages/Projects/projects.html">About</a></li>
             <li><a href="/Webpages/Projects/projects.html">Projects</a></li>
+            <li><a href="/Webpages/Projects/projects.html">About</a></li>
+            <li><a href="/Webpages/Projects/education.html">Education</a></li>
             <li><a href="/Webpages/Projects/projects.html" class="navLinksEnd">Contact</a></li>
         </ul>
     </nav>
@@ -25,20 +26,38 @@
         </div>
     </header>
     <div class="projectsSection">
-        <h2 class="projectsH2">Projects</h2>
+        <h2 class="H2 projectsH2">Projects</h2>
         <div class="projectSortBar">
-            <select class="projectSortBy">
+            <label>Project Type: </label>
+            <select id="projectSortBy">
                 <option>All</option>
-                <option>Personal Projects</option>
+                <option>Personal Project</option>
                 <option>Classwork</option>
             </select>
-            <select class="classSortBy">
+            <label id="labelClassSortBy">Class: </label>
+            <select id="classSortBy">
                 <option>All</option>
                 <option>CS-257</option>
             </select>
         </div>
-        <div class="projectsContainer">
+        <div id="projectsContainer">
             <div class="projectEntry projectEntry1">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/CS-257/DesignOnInterviews/Sketch1.png"
+                         alt="Photograph of a sketch created for the lab titled Design On Interviews">
+                    <h4>Design Based On Interviews</h4>
+                    <footer class="projectEntryFooter" data-class-name="CS-257">Classwork</footer>
+                </div>
+            </div>
+            <div class="projectEntry projectEntry2">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png"
+                         alt="Photograph of a Figma Design created for the lab titled Design For Dimensions">
+                    <h4>Design For Dimensions</h4>
+                    <footer class="projectEntryFooter" data-class-name="CS-257">Classwork</footer>
+                </div>
+            </div>
+            <div class="projectEntry projectEntry3">
                 <div class="projectEntrySpacer">
                     <img src="../Assets/Images/PortfolioWorks/PersonalProjects/TextMeApplication/TextMeAppLogoSmall.png"
                     alt="Logo for an instant messaging application named TextMe">
@@ -46,7 +65,7 @@
                     <footer class="projectEntryFooter">Personal Project</footer>
                 </div>
             </div>
-            <div class="projectEntry projectEntry2">
+            <div class="projectEntry projectEntry4">
                 <div class="projectEntrySpacer">
                     <img src="../Assets/Images/PortfolioWorks/PersonalProjects/Blockout/Blockout1.png"
                          alt="Screenshot of an in-development video game">
@@ -54,7 +73,7 @@
                     <footer class="projectEntryFooter">Personal Project</footer>
                 </div>
             </div>
-            <div class="projectEntry projectEntry3">
+            <div class="projectEntry projectEntry5">
                 <div class="projectEntrySpacer">
                     <img src="../Assets/Images/PortfolioWorks/PersonalProjects/RedCell/RedCell1.png"
                          alt="Screenshot of an in-development video game">
@@ -62,7 +81,7 @@
                     <footer class="projectEntryFooter">Personal Project</footer>
                 </div>
             </div>
-            <div class="projectEntry projectEntry3">
+            <div class="projectEntry projectEntry6">
                 <div class="projectEntrySpacer">
                     <img src="../Assets/Images/PortfolioWorks/PersonalProjects/Revolt/Revolt1.JPG"
                          alt="Screenshot of an in-development video game">
@@ -70,10 +89,76 @@
                     <footer class="projectEntryFooter">Personal Project</footer>
                 </div>
             </div>
+            <div class="projectEntry projectEntry7">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/PersonalProjects/OPHS/OPHS2.png"
+                         alt="Screenshot of a released video game">
+                    <h4>Operation Hacksaw</h4>
+                    <footer class="projectEntryFooter">Personal Project</footer>
+                </div>
+            </div>
+            <div class="projectEntry projectEntry8">
+                <div class="projectEntrySpacer">
+                    <img src="../Assets/Images/PortfolioWorks/PersonalProjects/ConstructHome/CH1.png"
+                         alt="Screenshot of a released video game">
+                    <h4>ConstructHome</h4>
+                    <footer class="projectEntryFooter">Personal Project</footer>
+                </div>
+            </div>
+        </div>
+        <p id="noResultsText">No projects exist with the selected search criteria</p>
+    </div>
+    <div class="aboutSection">
+        <h2 class="H2 educationH2">About</h2>
+        <div id="aboutMeParagraphs">
+            <p class="aboutMeParagraph">Hello, I'm Caleb Lanphere, a sophomore computer science at St. Bonaventure University in New York.
+            I have been self-teaching myself programming on and off since I was twelve. Since starting university,
+            I have drastically improved my skills and found the focus I want to spend the rest of my life
+            working towards.</p>
+            <p class="aboutMeParagraph">From middle through High School, I had big dreams, but did not have the skills to back up such
+            adventures. I started but failed to finished multiple projects throughout 2018-2024, with two being
+            completed and released. When starting my bachelors program, I gained enough skills to produce complete
+            programs and released my first, from scratch, instant messenger using Java titled TextMe</p>
+            <p id="finalAboutMeParagraph">I am thriving with the structured learning and I plan on releasing more programs throughout my time
+            at St. Bonaventure and throughout the rest of my career.</p>
         </div>
     </div>
-    <footer>
-
+    <div class="educationSection">
+        <h2 class="H2 educationH2">Relevant Education</h2>
+        <div class="classes">
+            <div class="computerScienceCourse">
+                <h3>User Experience Design | CS-257</h3>
+                <p>Course Description: This course will expose the student to a wide variety of human-computer interaction material to enable them to understand and design positive user experiences with technology. Students will study the theory of user interface/experience design in class and will put that theory into practice through laboratory exercises and teamwork. Ways to learn from users will be covered, as well as design methods including prototyping, heuristics, and best practices. Broader design topics related to current computing trends will also be discussed from a human-centered perspective.</p>
+            </div>
+            <div class="computerScienceCourse">
+                <h3>Data Structures and Algorithms | CS-132</h3>
+                <p>Course Description: This is the second course in the computer science major sequence. The course utilizes the object- oriented design approach to building applications, which emphasizes the creation and utilization of reusable software tools. Students are introduced to data structures that are commonly encountered in building software applications and to the analysis of the efficiency of algorithms used to solve problems. The programming language Java is used to implement software designs.</p>
+            </div>
+            <div class="computerScienceCourse">
+                <h3>Introduction to Java | CS-131</h3>
+                <p>Course Description: This is the second course in the computer science major sequence. The course utilizes the object- oriented design approach to building applications, which emphasizes the creation and utilization of reusable software tools. Students are introduced to data structures that are commonly encountered in building software applications and to the analysis of the efficiency of algorithms used to solve problems. The programming language Java is used to implement software designs.</p>
+            </div>
+            <div class="computerScienceCourse">
+                <h3>Beauty and Joy of Computer Science | CS-101</h3>
+                <p>Course Description: This course presents the history, social implications, great principles, and future of computing. It examines the computing applications that have changed the world and how computing empowers discovery and progress in other fields. The relevance of computing to the student and society will be emphasized. Students will learn the joy of programming a computer using a friendly, graphical language, and will complete a substantial team programming project related to their interests.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contactMeSection">
+        <h2 class="H2 contactH2">About</h2>
+        <p>I can be reached at the following links: </p>
+        <div class="contactMe">
+            <a href="mailto:Caleb.Lanphere.1@gmail.com">Caleb.Lanphere.1@gmail.com</a>
+            <a href="https://github.com/CalebLanphere">Github</a>
+            <a href="https://www.linkedin.com/in/caleb-lanphere-2809a332b/">LinkedIn</a>
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <p>Copyright © 2025 Caleb Lanphere. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/in/caleb-lanphere-2809a332b/">LinkedIn</a>
+        <a href="https://github.com/CalebLanphere">Github</a>
+        <a href="mailto:Caleb.Lanphere.1@gmail.com">Caleb.Lanphere.1@gmail.com</a>
     </footer>
 </body>
+<script src="../Js/Home/HomeSortByModal.js"></script>
 </html>

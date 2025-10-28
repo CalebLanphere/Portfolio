@@ -42,52 +42,53 @@
     height: auto;
     align-content: center;
     justify-content: center;
+    color: white;
 }
 
 .projectSortBar {
     display: flex;
-    background-color: white;
+    background-color: darkgrey;
     height: 25px;
     width: 95%;
     margin: auto;
     justify-content: space-evenly;
     padding: 5px;
+    border-radius: 15px;
 }
 
-.projectSortBy {
+#classSortBy, #projectSortBy {
     background-color: white;
     height: 25px;
     width: 150px;
 }
 
-.classSortBy {
-    background-color: white;
+#classSortBy, #labelClassSortBy {
+    display: none;
     height: 25px;
     width: 150px;
 }
 
-.projectsH2 {
+.H2 {
     text-align: center;
-    color: white;
     font-size: 1.5rem;
 }
 
-.projectsContainer {
+#projectsContainer {
     display: grid;
     padding: 1rem;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     grid-auto-flow: dense;
     grid-gap: 1rem;
+    height: auto;
 }
 
 .projectEntry {
     display: flex;
     width: 350px;
-    height: 425px;
+    height: auto;
     background-color: gray;
     justify-content: center;
-    color: white;
     margin: 15px;
     padding: 5px;
     border-radius: 10px;
@@ -101,7 +102,7 @@
 
 .projectEntry h4 {
     text-align: center;
-    font-size: 34px;
+    font-size: 28px;
     text-wrap: wrap;
 }
 
@@ -110,4 +111,110 @@
     border-style: solid none none none;
     border-width: 1px;
     padding-top: 5px;
+}
+
+#noResultsText {
+    display: none;
+    position: relative;
+    bottom: 250px;
+    text-align: center;
+}
+
+.aboutSection {
+    display: flex;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    background-color: darkgrey;
+    align-content: center;
+    justify-content: center;
+}
+
+#aboutMeParagraphs {
+    display: grid;
+    text-align: center;
+    align-content: inherit;
+    justify-content: inherit;
+}
+
+#aboutMeParagraph, .aboutMeParagraph, #finalAboutMeParagraph {
+    text-wrap: auto;
+    width: 850px;
+    font-size: large;
+    padding: 15px;
+    border-bottom: solid lightgray;
+}
+
+#finalAboutMeParagraph {
+    border-bottom: none;
+}
+
+.educationSection {
+    display: flex;
+    color: white;
+    background-color: black;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.classes {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 15px;
+    width: 100%;
+}
+
+.computerScienceCourse {
+    border: solid lightgray;
+    padding: 15px;
+    height: auto;
+    border-radius: 15px;
+    background-color: black;
+    margin: 15px;
+}
+
+.computerScienceCourse p {
+    text-wrap: wrap;
+    text-indent: 30px;
+}
+
+.contactMeSection {
+    display: flex;
+    color: white;
+    background-color: darkgrey;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.contactMe a {
+    display: grid;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    border: solid lightgray;
+    border-radius: 15px;
+    grid-template-columns: auto auto auto;
+}
+
+.contactMe a, .mainFooter a {
+    color: white;
+    text-underline-style: none;
+    font-style: normal;
+}
+
+.mainFooter {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+    padding: 15px;
+    height: auto;
+    margin: 0;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.mainFooter p {
+    margin: 0;
 }
