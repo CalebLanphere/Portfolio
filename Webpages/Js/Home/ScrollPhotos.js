@@ -3,12 +3,12 @@ const previousImage = document.getElementById("previousImage");
 const nextImage = document.getElementById("nextImage");
 let index = 0;
 let imagesToShow = {
-    DesignForUnderstanding: ["/Webpages/Assets/Images/PortfolioWorks/DesignForUnderstanding/FinalClearDesign.png",
-    "/Webpages/Assets/Images/PortfolioWorks/DesignForUnderstanding/FinalPersuasiveDesign.png"],
-    DesignForDimensions: ["/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png",
-    "/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/Blog_Site_Sketches/Sketch1.png",
-        "/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/Main_Page_Design_Sketches/Sketch1.png",
-        "/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/Viewer_Design_Sketches/Sketch1.png",],
+    DesignForUnderstanding: ["/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/DesignForUnderstanding/FinalClearDesign.png",
+    "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/DesignForUnderstanding/FinalPersuasiveDesign.png"],
+    DesignForDimensions: ["/CS-257-Webpage/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png",
+    "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/Blog_Site_Sketches/Sketch1.png",
+        "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/Main_Page_Design_Sketches/Sketch1.png",
+        "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/Viewer_Design_Sketches/Sketch1.png",],
 };
 
 previousImage.addEventListener("click", function() {
