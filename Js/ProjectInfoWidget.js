@@ -27,12 +27,12 @@ let previousImage;
 let nextImage;
 let index = 0;
 let imagesToShow = {
-    DesignForUnderstanding: ["/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalClearDesign.png",
-        "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalPersuasiveDesign.png"],
+    DesignForUnderstanding: ["/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalClearDesign.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalPersuasiveDesign.png"],
     DesignForDimensions: ["/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png",
-        "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/BlogSiteSketches/Sketch1.png",
-        "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/MainPageDesignSketches/Sketch1.png",
-        "/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/ViewerDesignSketches/Sketch1.png",],
+        "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/BlogSiteSketches/Sketch1.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/MainPageDesignSketches/Sketch1.png",
+        "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/ViewerDesignSketches/Sketch1.png",],
 };
 let selectedPhotoArray;
 let isPhotoArraySelected = false;
