@@ -29,7 +29,7 @@ let index = 0;
 let imagesToShow = {
     DesignForUnderstanding: ["/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalClearDesign.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalPersuasiveDesign.png"],
-    DesignForDimensions: ["/CS-257-Webpage/Webpages/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png",
+    DesignForDimensions: ["/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/BlogSiteSketches/Sketch1.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/MainPageDesignSketches/Sketch1.png",
         "/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/ViewerDesignSketches/Sketch1.png",],
