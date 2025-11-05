@@ -9,23 +9,23 @@
 <body>
     <nav class="masterNavbar">
         <div class="homeLink">
-            <a href="/index.html" class="navLinksEnd">Caleb Lanphere</a>
+            <a href="#homeHeader" class="navLinksEnd">Caleb Lanphere</a>
         </div>
         <ul class="navPageLinks">
-            <li><a id="projectNav">Projects</a></li>
-            <li><a id="aboutNav">About</a></li>
-            <li><a id="educationNav">Education</a></li>
-            <li><a class="navLinksEnd" id="contactNav">Contact</a></li>
+            <li><a href="#projectSection" id="projectNav">Projects</a></li>
+            <li><a href="#aboutSection" id="aboutNav">About</a></li>
+            <li><a href="#educationSection" id="educationNav">Education</a></li>
+            <li><a href="#contactMeSection" class="navLinksEnd" id="contactNav">Contact</a></li>
         </ul>
     </nav>
-    <header class="homeHeader">
+    <header id="homeHeader">
         <div class="verticalSpacer">
             <h1 class="homeHeaderH1">Caleb Lanphere</h1>
             <div class="underliningSeparatorBar"></div>
             <h3 class="homeHeaderH3">Computer Science - St. Bonaventure University</h3>
         </div>
     </header>
-    <div class="projectsSection">
+    <div id="projectSection">
         <h2 class="H2 projectsH2">Projects</h2>
         <div class="projectSortBar">
             <label>Project Type: </label>
@@ -116,7 +116,7 @@
         </div>
         <p id="noResultsText">No projects exist with the selected search criteria</p>
     </div>
-    <div class="aboutSection">
+    <div id="aboutSection">
         <h2 class="H2 educationH2">About</h2>
         <div id="aboutMeParagraphs">
             <p class="aboutMeParagraph">Hello, I'm Caleb Lanphere, a sophomore computer science at St. Bonaventure University in New York.
@@ -131,7 +131,7 @@
             at St. Bonaventure and throughout the rest of my career.</p>
         </div>
     </div>
-    <div class="educationSection">
+    <div id="educationSection">
         <h2 class="H2 educationH2">Relevant Education</h2>
         <div class="classes">
             <div class="computerScienceCourse">
@@ -152,8 +152,8 @@
             </div>
         </div>
     </div>
-    <div class="contactMeSection">
-        <h2 class="H2 contactH2">About</h2>
+    <div id="contactMeSection">
+        <h2 class="H2 contactH2">Contact Me</h2>
         <p>I can be reached at the following links: </p>
         <div class="contactMe">
             <a href="mailto:Caleb.Lanphere.1@gmail.com">Caleb.Lanphere.1@gmail.com</a>
@@ -179,13 +179,18 @@
             <div class="projectImageDiv">
                 <img data-project="DesignForUnderstanding" id="projectImage0" src="Assets/Images/PortfolioWorks/CS-257/DesignForUnderstanding/FinalPersuasiveDesign.png">
                 <div class="imgButtons">
-                    <button id="previousImage0"><</button>
-                    <button id="nextImage0">></button>
+                    <button class="photoBarButtonLeft" id="previousImage0"><</button>
+                    <button class="photoBarButtonRight" id="nextImage0">></button>
                 </div>
             </div>
         </div>
+        <div class="projectData">
+            <p>Started: Oct. 21st, 2025</p>
+            <p>Completed: Oct. 28th, 2025</p>
+            <a class="projectLink" href="">Access To Project</a>
+        </div>
         <div class="projectExitButton centerContent">
-            <button id="closeProject0">Close Project</button>
+            <button class="exitProject" id="closeProject0">Close Project</button>
         </div>
     </div>
     <div class="ProjectFullScreenWidget" id="ProjectWidget1">
@@ -200,17 +205,21 @@
             <div class="projectImageDiv">
                 <img data-project="DesignForDimensions" id="projectImage1" src="/Assets/Images/PortfolioWorks/CS-257/DesignForDimensions/FigmaDesign.png">
                 <div class="imgButtons">
-                    <button id="previousImage1"><</button>
-                    <button id="nextImage1">></button>
+                    <button class="photoBarButtonLeft" id="previousImage1"><</button>
+                    <button class="photoBarButtonRight" id="nextImage1">></button>
                 </div>
             </div>
         </div>
+        <div class="projectData">
+            <p>Started: Oct. 7th, 2025</p>
+            <p>Completed: Oct. 21st, 2025</p>
+            <a class="projectLink" href="">Access To Project</a>
+        </div>
         <div class="projectExitButton centerContent">
-            <button id="closeProject1">Close Project</button>
+            <button class="exitProject" id="closeProject1">Close Project</button>
         </div>
     </div>
 </body>
 <script src="Js/HomeSortByModal.js"></script>
 <script src="Js/ProjectInfoWidget.js"></script>
-<script src="Js/Navbar.js"></script>
 </html>

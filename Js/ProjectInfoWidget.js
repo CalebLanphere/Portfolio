@@ -4,6 +4,7 @@ let indexOfProjectSelected = 0;
 
 for(let i = 0; i < ProjectDiv.length; i++) {
     ProjectDiv[i].addEventListener("click", (e) => {
+        e.stopPropagation();
         e.preventDefault();
         indexOfProjectSelected = i;
         setImageScrollingVars();
@@ -12,6 +13,7 @@ for(let i = 0; i < ProjectDiv.length; i++) {
 }
 for(let i = 0; i < ProjectInfoWidget.length; i++) {
     document.getElementById("closeProject" + i).addEventListener("click", (e) => {
+        e.stopPropagation();
         e.preventDefault();
         document.getElementById("ProjectWidget".concat(parseInt(ProjectDiv[i].dataset.index).toString())).style.display = "none";
         clearPhotoArray();
@@ -43,11 +45,15 @@ function setImageScrollingVars() {
     nextImage = document.getElementById("nextImage" + indexOfProjectSelected);
     console.log("projectImage" + indexOfProjectSelected);
 
-    previousImage.addEventListener("click", function() {
+    previousImage.addEventListener("click", function(e) {
+        e.stopPropagation();
+        e.preventDefault();
         previousPhoto();
     })
 
-    nextImage.addEventListener("click", function() {
+    nextImage.addEventListener("click", function(e) {
+        e.stopPropagation();
+        e.preventDefault();
         nextPhoto();
     })
 

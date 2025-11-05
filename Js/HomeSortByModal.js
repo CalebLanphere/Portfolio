@@ -14,11 +14,11 @@ function sortItemsInList(sortBy) {
     let classCounter = showOrHideItemsClassSort(sortBy)
 
     if(sortBy === "Classwork") {
-        sortByClass.style.display = "flex"
-        labelSortByClass.style.display = "flex"
+        sortByClass.style.visibility = "visible"
+        labelSortByClass.style.visibility = "visible"
     } else {
-        sortByClass.style.display = "none"
-        labelSortByClass.style.display = "none"
+        sortByClass.style.visibility = "hidden"
+        labelSortByClass.style.visibility = "hidden"
     }
 
     if(counter < projectFooters.length || counter < classCounter) {
